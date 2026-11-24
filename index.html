@@ -1,0 +1,355 @@
+
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prototipo Manual de Marca</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        /* Estilo común de todas las cajas */
+        .caja {
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        /* Colores: colorCaja1 hasta colorCaja60 */
+        .colorCaja1 {
+            background-color: #FFFFFF;
+        }
+
+        .colorCaja2 {
+            background-color: #9ACD32;
+        }
+
+        .colorCaja3 {
+            background-color: #4B0082;
+        }
+
+        .colorCaja4 {
+            background-color: #3A0CE0;
+        }
+
+        .colorCaja5 {
+            background-color: #E8175D;
+        }
+
+        .colorCaja6 {
+            background-color: #3B5E00;
+        }
+
+        .colorCaja7 {
+            background-color: #EEEEBB;
+        }
+
+        .colorCaja8 {
+            background-color: #7B68EE;
+        }
+
+        .colorCaja9 {
+            background-color: #A52A2A;
+        }
+
+        .colorCaja10 {
+            background-color: #FAEBD7;
+        }
+
+        .colorCaja11 {
+            background-color: #7CFC00;
+        }
+
+        .colorCaja12 {
+            background-color: #DEB887;
+        }
+
+        .colorCaja13 {
+            background-color: #571212b6;
+        }
+
+        .colorCaja14 {
+            background-color: #FF00FF;
+        }
+
+        .colorCaja15 {
+            background-color: #DEB887;
+        }
+
+        .colorCaja16 {
+            background-color: #FF7F50;
+        }
+
+        .colorCaja17 {
+            background-color: #708090;
+        }
+
+        .colorCaja18 {
+            background-color: #556B2F;
+        }
+
+        .colorCaja19 {
+            background-color: #DDA0DD;
+        }
+
+        .colorCaja20 {
+            background-color: #4B0082;
+        }
+
+        .colorCaja21 {
+            background-color: #FFFF00;
+        }
+
+        .colorCaja22 {
+            background-color: #B22222;
+        }
+
+        .colorCaja23 {
+            background-color: #808080;
+        }
+
+        .colorCaja24 {
+            background-color: #164d7a83;
+        }
+
+        .colorCaja25 {
+            background-color: #34105e;
+        }
+
+        .colorCaja26 {
+            background-color: #8B008B;
+        }
+
+        .colorCaja27 {
+            background-color: #DAA520;
+        }
+
+        .colorCaja28 {
+            background-color: #8A2BE2;
+        }
+
+        .colorCaja29 {
+            background-color: #5c0d2b;
+        }
+
+        .colorCaja30 {
+            background-color: #DEB887;
+        }
+
+        .colorCaja31 {
+            background-color: #6A5ACD;
+        }
+
+        .colorCaja32 {
+            background-color: #000080;
+        }
+
+        .colorCaja33 {
+            background-color: #D8BFD8;
+        }
+
+        .colorCaja34 {
+            background-color: #FF69B4;
+        }
+
+        .colorCaja35 {
+            background-color: #EE82EE;
+        }
+
+        .colorCaja36 {
+            background-color: #F5DEB3;
+        }
+
+        .colorCaja37 {
+            background-color: #ecd4d4;
+        }
+
+        .colorCaja38 {
+            background-color: #9ACD32;
+        }
+
+        .colorCaja39 {
+            background-color: #191970;
+        }
+
+        .colorCaja40 {
+            background-color: #9370DB;
+        }
+
+        .colorCaja41 {
+            background-color: #FFD700;
+        }
+
+        .colorCaja42 {
+            background-color: #000000;
+        }
+
+        .colorCaja43 {
+            background-color: #4169E1;
+        }
+
+        .colorCaja44 {
+            background-color: #FF7F50;
+        }
+
+        .colorCaja45 {
+            background-color: #F0E68C;
+        }
+
+        .colorCaja46 {
+            background-color: #008080;
+        }
+
+        .colorCaja47 {
+            background-color: #FF8C00;
+        }
+
+        .colorCaja48 {
+            background-color: #775454;
+        }
+
+        .colorCaja49 {
+            background-color: #442323;
+        }
+
+        .colorCaja50 {
+            background-color: #FF00FF;
+        }
+
+        .colorCaja51 {
+            background-color: #008B8B;
+        }
+
+        .colorCaja52 {
+            background-color: #FFEBCD;
+        }
+
+        .colorCaja53 {
+            background-color: #F5F5F5;
+        }
+
+        .colorCaja54 {
+            background-color: #EE82EE;
+        }
+
+        .colorCaja55 {
+            background-color: #FF0000;
+        }
+
+        .colorCaja56 {
+            background-color: #7B68EE;
+        }
+
+        .colorCaja57 {
+            background-color: #8A2BE2;
+        }
+
+        .colorCaja58 {
+            background-color: #A52A2A;
+        }
+
+        .colorCaja59 {
+            background-color: #FFFF00;
+        }
+
+        .colorCaja60 {
+            background-color: #9ACD32;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container my-4">
+        <h1 class="text-center mb-4">Prototipo Manual de Marca</h1>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="row">
+            <div class="col-1 caja colorCaja1">soy una columna</div>
+            <div class="col-1 caja colorCaja2">soy una columna</div>
+            <div class="col-1 caja colorCaja3">soy una columna</div>
+            <div class="col-1 caja colorCaja4">soy una columna</div>
+            <div class="col-1 caja colorCaja5">soy una columna</div>
+            <div class="col-1 caja colorCaja6">soy una columna</div>
+            <div class="col-1 caja colorCaja7">soy una columna</div>
+            <div class="col-1 caja colorCaja8">soy una columna</div>
+            <div class="col-1 caja colorCaja9">soy una columna</div>
+            <div class="col-1 caja colorCaja10">soy una columna</div>
+            <div class="col-1 caja colorCaja11">soy una columna</div>
+            <div class="col-1 caja colorCaja12">soy una columna</div>
+        </div>
+        <div class="row">
+            <div class="col-1 caja colorCaja13">soy una columna</div>
+            <div class="col-1 caja colorCaja14">soy una columna</div>
+            <div class="col-1 caja colorCaja15">soy una columna</div>
+            <div class="col-1 caja colorCaja16">soy una columna</div>
+            <div class="col-1 caja colorCaja17">soy una columna</div>
+            <div class="col-1 caja colorCaja18">soy una columna</div>
+            <div class="col-1 caja colorCaja19">soy una columna</div>
+            <div class="col-1 caja colorCaja20">soy una columna</div>
+            <div class="col-1 caja colorCaja21">soy una columna</div>
+            <div class="col-1 caja colorCaja22">soy una columna</div>
+            <div class="col-1 caja colorCaja23">soy una columna</div>
+            <div class="col-1 caja colorCaja24">soy una columna</div>
+        </div>
+        <div class="row">
+            <div class="col-1 caja colorCaja25">soy una columna</div>
+            <div class="col-1 caja colorCaja26">soy una columna</div>
+            <div class="col-1 caja colorCaja27">soy una columna</div>
+            <div class="col-1 caja colorCaja28">soy una columna</div>
+            <div class="col-1 caja colorCaja29">soy una columna</div>
+            <div class="col-1 caja colorCaja30">soy una columna</div>
+            <div class="col-1 caja colorCaja31">soy una columna</div>
+            <div class="col-1 caja colorCaja32">soy una columna</div>
+            <div class="col-1 caja colorCaja33">soy una columna</div>
+            <div class="col-1 caja colorCaja34">soy una columna</div>
+            <div class="col-1 caja colorCaja35">soy una columna</div>
+            <div class="col-1 caja colorCaja36">soy una columna</div>
+        </div>
+        <div class="row">
+            <div class="col-1 caja colorCaja37">soy una columna</div>
+            <div class="col-1 caja colorCaja38">soy una columna</div>
+            <div class="col-1 caja colorCaja39">soy una columna</div>
+            <div class="col-1 caja colorCaja40">soy una columna</div>
+            <div class="col-1 caja colorCaja41">soy una columna</div>
+            <div class="col-1 caja colorCaja42">soy una columna</div>
+            <div class="col-1 caja colorCaja43">soy una columna</div>
+            <div class="col-1 caja colorCaja44">soy una columna</div>
+            <div class="col-1 caja colorCaja45">soy una columna</div>
+            <div class="col-1 caja colorCaja46">soy una columna</div>
+            <div class="col-1 caja colorCaja47">soy una columna</div>
+            <div class="col-1 caja colorCaja48">soy una columna</div>
+        </div>
+        <div class="row">
+            <div class="col-1 caja colorCaja49">soy una columna</div>
+            <div class="col-1 caja colorCaja50">soy una columna</div>
+            <div class="col-1 caja colorCaja51">soy una columna</div>
+            <div class="col-1 caja colorCaja52">soy una columna</div>
+            <div class="col-1 caja colorCaja53">soy una columna</div>
+            <div class="col-1 caja colorCaja54">soy una columna</div>
+            <div class="col-1 caja colorCaja55">soy una columna</div>
+            <div class="col-1 caja colorCaja56">soy una columna</div>
+            <div class="col-1 caja colorCaja57">soy una columna</div>
+            <div class="col-1 caja colorCaja58">soy una columna</div>
+            <div class="col-1 caja colorCaja59">soy una columna</div>
+            <div class="col-1 caja colorCaja60">soy una columna</div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="text-center">
+            <img src="imagenes/infografia-765x1024.webp" class="img-fluid rounded shadow"
+                alt="Infografía de productos de diseño gráfico" style="max-width: 800px;">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
